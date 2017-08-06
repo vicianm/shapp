@@ -23,14 +23,14 @@ with `@ShellMethod` annotation:
 
     }
 
-Now, after running your command line Java application your `helloWorld` command is ready.
-There are also three build-in common commands on your disposal - `help`, `exit` and `params`.
+Now, after running your command line Java application your `helloWorld` command is ready for invocation.
 
     MyShellApp started.
     Type 'help' to print all methods.
 
 ***help*** lists available commands with their description.
-Notice that our annotated `helloWorld` method is automatically listed among other commands:
+Notice that our annotated `helloWorld` method is automatically listed among other commands.
+There are also three common build-in commands on your disposal - `help`, `exit` and `params`.
 
     help
     method name - description
