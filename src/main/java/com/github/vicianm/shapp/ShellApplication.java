@@ -1,4 +1,4 @@
-package org.vician.shapp;
+package com.github.vicianm.shapp;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

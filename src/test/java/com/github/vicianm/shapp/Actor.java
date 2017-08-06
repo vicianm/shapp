@@ -1,4 +1,4 @@
-package org.vician.shapp;
+package com.github.vicianm.shapp;
 
 
 public class Actor {

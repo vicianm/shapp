@@ -1,4 +1,4 @@
-package org.vician.shapp;
+package com.github.vicianm.shapp;
 
 import java.util.ArrayList;
 import java.util.List;

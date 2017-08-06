@@ -1,7 +1,4 @@
-package org.vician.shapp;
-
-import org.vician.shapp.ShellApplication;
-import org.vician.shapp.ShellMethod;
+package com.github.vicianm.shapp;
 
 public class MovieDbShell extends ShellApplication {
 
