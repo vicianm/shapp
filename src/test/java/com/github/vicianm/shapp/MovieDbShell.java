@@ -3,7 +3,7 @@ package com.github.vicianm.shapp;
 public class MovieDbShell extends ShellApplication {
 
     public static void main(String[] args) throws Exception {
-        new MovieDbShell().runConsole();
+        new MovieDbShell().start();
     }
 
     private MovieDb db;

@@ -21,8 +21,8 @@ public class ShellApplication {
     
     protected List<String> descriptions;
     
-    public void runConsole() throws Exception{
-        initConsole();
+    public void start() throws Exception {
+        init();
         
         System.out.println(getClass().getSimpleName() + " started.");
         System.out.println("Type 'help' to print all methods.");
@@ -82,7 +82,7 @@ public class ShellApplication {
         } 
     }
     
-    protected void initConsole() {
+    protected void init() {
         methods = new ArrayList<Method>();
         descriptions = new ArrayList<String>();
         longestMethodName = headerMethodName.length();
@@ -130,7 +130,7 @@ public class ShellApplication {
     
     @ShellMethod(
             params = {"method name"},
-            description = "prints attributes of any available method")
+            description = "prints input params of a command")
     public void params(String methodName) {
         boolean methodExists = false;
         for (Method m : methods) {
@@ -153,7 +153,9 @@ public class ShellApplication {
     
     @ShellMethod(description = "exits the application")
     public void exit() {
-        System.out.println("Closing application.");
+        System.out.println("Closing the application.");
+        // TODO exit politely
+        // TODO call 'exit' callback method to give a change to cleanup resources
         System.exit(0);
     }
     
