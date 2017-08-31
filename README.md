@@ -56,5 +56,3 @@ There are also three common build-in commands on your disposal - `help`, `exit` 
 
     exit
     Closing the application.
-
-For more comprehensive scenario see https://github.com/vicianm/shapp-demo
